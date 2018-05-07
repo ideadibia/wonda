@@ -5,7 +5,6 @@ body {
 }
 
 .element {
-  position: relative;
   float: left;
   width: 100%;
 }
@@ -18,13 +17,11 @@ body {
 }
 
 .text {
-  position: relative;
   float: left;
 }
 
 ._button {
   display: block;
-  position: relative;
   float: left;
   height: 51px;
   border-radius: 3px;
@@ -37,19 +34,16 @@ body {
 }
 
 .element-1 {
-  z-index: 1;
   height: 400px;
   background-color: #d92c2e;
 }
 
 .element-2 {
-  z-index: 5;
   height: 400px;
   background-color: rgb(222, 222, 222);
 }
 
 .element-3 {
-  z-index: 8;
   height: 50px;
   background-color: #dcb939;
 }
@@ -60,43 +54,35 @@ body {
 }
 
 .image-2 {
-  position: relative;
   clear: both;
-  z-index: 11;
   width: 100%;
   margin-top: 30px;
 }
 
 .image-3 {
-  position: relative;
   clear: both;
-  z-index: 2;
   width: 400px;
   margin: -350px 0 0 15%;
   box-shadow: -4px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .image-4 {
-  position: relative;
-  z-index: 13;
   width: 320px;
-  margin: -354px 0 0 63.6%;
+  margin: -354px 0 0 63.59896%;
   box-shadow: -1px 2px 5px rgba(0, 0, 0, .5);
 }
 
 .text-1 {
   clear: both;
-  z-index: 12;
   width: 46.8%;
   min-height: 125px;
-  margin: -219px 0 0 43.19921875%;
+  margin: -219px 0 0 43.1992199999%;
   font-size: 1em;
   font-weight: 200;
   color: #ffffff;
 }
 
 .text-2 {
-  z-index: 3;
   width: 45%;
   height: 125px;
   min-height: 160px;
@@ -107,7 +93,6 @@ body {
 
 .text-3 {
   clear: both;
-  z-index: 6;
   width: 40%;
   height: 192px;
   min-height: 192px;
@@ -118,7 +103,6 @@ body {
 
 .text-4 {
   clear: both;
-  z-index: 9;
   width: 34%;
   min-height: 19px;
   margin: -33px 0 0 15.16667%;
@@ -129,7 +113,6 @@ body {
 }
 
 .text-5 {
-  z-index: 10;
   width: 33.1666666666%;
   min-height: 19px;
   margin: -33px 0 0 56%;
@@ -141,13 +124,11 @@ body {
 }
 
 ._button-1 {
-  z-index: 4;
   width: 24.4166666666%;
   margin: -140px 0 0 60%;
 }
 
 ._button-2 {
-  z-index: 7;
   width: 15%;
   margin: -121px 0 0 25%;
   box-shadow: -2px 2px 5px rgba(0, 0, 0, .5);
@@ -244,10 +225,156 @@ body {
   color: inherit;
 }
 
-.text-4 em,
-.text-5 em {
+.text-4 em {
   font-size: inherit;
   font-weight: inherit;
   text-decoration: inherit;
   color: #d92c2e;
+}
+
+@media(max-width: 800px) {
+  .image {
+    height: auto;
+  }
+
+  .image-3 {
+    width: 40%;
+    margin-top: -315px;
+    margin-left: 10%;
+  }
+
+  .image-4 {
+    width: 35%;
+    margin-top: -341px;
+    margin-left: 54.99805%;
+  }
+
+  .text-2 {
+    width: 39%;
+    height: 160px;
+    margin-top: -299px;
+    margin-left: 54.99805%;
+    font-size: 1em;
+  }
+
+  .text-3 {
+    width: 35%;
+    font-size: 1.429em;
+  }
+
+  .text-4 {
+    margin-left: 15.16602%;
+  }
+
+  .text-5 {
+    width: 25%;
+    margin-left: 65%;
+  }
+
+  ._button-1 {
+    margin-top: -126px;
+    margin-left: 57.59961%;
+  }
+}
+
+@media(max-width: 600px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  .element {
+    position: relative;
+  }
+
+  .image {
+    height: auto;
+  }
+
+  .text {
+    position: relative;
+  }
+
+  ._button {
+    position: relative;
+  }
+
+  .element-1 {
+    z-index: 1;
+  }
+
+  .element-2 {
+    z-index: 5;
+    height: 332px;
+  }
+
+  .element-3 {
+    z-index: 8;
+  }
+
+  .image-2 {
+    position: relative;
+    z-index: 11;
+  }
+
+  .image-3 {
+    position: relative;
+    z-index: 2;
+    margin-top: -295px;
+  }
+
+  .image-4 {
+    position: relative;
+    z-index: 13;
+    margin-top: -271px;
+    margin-left: 54.16146%;
+  }
+
+  .text-1 {
+    z-index: 12;
+    width: 42.5%;
+    margin-left: 47.5%;
+    font-size: 24px;
+  }
+
+  .text-2 {
+    z-index: 3;
+    margin-top: -315px;
+    margin-left: 54.9974%;
+    font-size: 24px;
+  }
+
+  .text-3 {
+    z-index: 6;
+    margin-top: -262px;
+    margin-left: 12.5%;
+    font-size: 1.333em;
+  }
+
+  .text-4 {
+    z-index: 9;
+    width: 35%;
+    margin-left: 15%;
+    font-size: 0.5em;
+  }
+
+  .text-5 {
+    z-index: 10;
+    margin-top: -19px;
+    margin-left: 6.66927%;
+    font-size: 0.5em;
+  }
+
+  ._button-1 {
+    z-index: 4;
+    margin-top: -155px;
+    margin-left: 57.59896%;
+    font-size: 0.5em;
+  }
+
+  ._button-2 {
+    z-index: 7;
+    margin-top: -102px;
+    margin-left: 22.79948%;
+    font-size: 0.583em;
+  }
 }
